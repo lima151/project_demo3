@@ -1,0 +1,463 @@
+/*
+    template name: Bazinger.
+    Author Name: lima.
+    Version: 1.1
+
+    Table of content
+    =========
+    *****Home page*****
+    0.defolt css
+    1.header part
+    2.menu part
+    3.banner part
+    4.summarise part
+    5.Show the gallery part
+    6. Watch-Technology  part
+    7. price part
+    8. testimonial part 
+    9. downlode part
+    10. contact_part
+    11. footer part
+    12. backtop 
+*/
+
+/*  0.defolt css */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul ,li{
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 14px;
+    font-weight:400;
+    color: #838383;
+}
+
+h2{
+    color: #414042;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 15px;
+    color: #414042;
+}
+
+:root{
+    --main_color :  #4bcaff;
+    --second_color: #f9f9f9;
+}
+.buttom_design{
+    border: 1px solid var(--second_color);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--second_color);  
+    display: inline-block;
+}
+.buttom_design:hover{
+    background-color: var(--main_color);
+    border: 1px solid var(--main_color);
+    color: var(--second_color);
+    transition: 0.75s;
+     box-shadow: rgba(75, 202, 255, 0.24) 0px 4px 9px;  
+  }
+.section_header{
+    padding: 48px 0 90px 0;
+}
+.section_header p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #414042;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+  }
+
+/*1. menu part css */
+
+.customNav{
+    background: #131e29;
+    border-bottom: 1px solid #51697f;
+}
+
+#mynav ul li a{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#mynav ul li a.active{
+    color: var(--main_color);
+}
+#mynav ul li a:hover{
+    color: var(--main_color);
+}
+
+/*2. banner part */
+.banner_items{
+    height: 700px;
+    background-size: cover!important;
+    background-position: center!important;
+    color: var(--second_color);
+}
+.banner_content{
+    width: 60%;
+    padding: 244px 0 0 56px;
+    margin-left: auto;
+ 
+}
+.banner_content h1{
+    font-weight: 300;
+    font-size: 48px;
+    display: inline;
+}
+.banner_content h1 span{
+    font-weight: 700;
+    font-size: 48px; 
+}
+.banner_content p{
+    margin: 22px 0 36px 0;
+    font-size: 18PX;
+    font-weight: 300;
+    color: var(--second_color);
+}
+.banner_content a{
+    padding: 24px 50px;
+    margin-right: 38px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.banner_icon{
+    margin-top: 47px;
+    display: block; 
+}
+.banner_icon span{
+    font-size: 18px;
+    font-weight: 300;
+}
+.banner_icon i{
+    height: 54px;
+    width: 54px;
+    line-height: 54px;
+    background-color: #17191e;
+    color: var(--main_color);
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 18px;
+}
+
+/*3. summarise_part */
+#summarise_part{
+    background-color: #f9f9f9;
+    padding-bottom: 92px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.summarise_item{
+    text-align: center;
+    cursor: pointer;
+}
+.summarise_item:hover h6{
+    color: var(--main_color);
+}
+.summarise_img{
+ width: 100%;
+}
+.summarise_item img{  
+    width: 160px; 
+    padding-bottom: 32px;  
+}
+.summarise_item p{
+    padding-top: 22px;
+    line-height: 20px;
+}
+/*5. Show the gallery part*/
+#gallery{
+    padding-bottom: 105px;   
+}
+.gallery_img{
+    position: relative;
+}
+.gallery_img img{
+    width: 100%;
+}
+.gallery_img .overly{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: var(--main_color);
+    border-radius: 5px;
+}
+.gallery_img .overly p{
+    color: var(--main_color);
+    margin-top: 56%;
+    padding:  13px ;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(15, 23, 26, 0.4)
+}
+.gallery_inner p{
+    margin-top: 25px;
+}
+
+/*6. Watch-Technology  part*/
+#technology{
+     background: url("../img/Technology.jpg");
+     background-size: cover;
+     height: 550px;
+     background-attachment: fixed;
+     color:#ffff;
+     padding: 80px 0 190px 0;
+}
+.technology_item h1{
+    font-size: 48px;
+    font-weight: 400;
+    padding-bottom: 46px;
+}
+.technology_item h1 span{
+    font-weight: 700;
+}
+.technology_item p{
+    width: 80%;
+    margin-left: auto;
+    color: #ffff;
+    margin-bottom: 26px;
+    font-size: 18px;
+}
+/*7 price part */
+#choose_price{
+     padding-bottom: 88px;
+    border-bottom: 1px solid #e7e7e7;
+}
+#choose_price .card{
+ background-color: #f9f9f9;
+ transition: transform 0.3s;
+}
+#choose_price .card:hover{
+    transform: scale(1.090);
+}
+.card h6{
+    padding: 28px 0;
+    color: #d7d7d7;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card h5{
+    padding: 28px 0;
+    font-size: 85px;
+    font-weight: 700;
+    color: #fff;
+}
+.card-1 h5,
+.card-1 .btn{
+    background-color: #91c46b; 
+}
+.card-2 h5,
+.card-2 .btn{
+    background-color: var(--main_color); 
+}
+.card-3 h5,
+.card-3 .btn{
+    background-color: #fd7c00; 
+}
+
+.card ul{   
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.card ul li{
+    color: #d7d7d7;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-transform: capitalize; 
+}
+.card button{
+    border: 0;
+}
+
+.card .btn{
+    margin-bottom: 18px;
+}
+
+.card .btn a{
+ font-size: 15px;
+ font-weight: 700;
+}
+.card-1:hover h6,
+.card-1:hover ul li{
+    color: #91c46b;
+}
+.card-2:hover h6,
+.card-2:hover ul li{
+    color: var(--main_color); 
+}
+
+.card-3:hover h6,
+.card-3:hover ul li{
+    color: #fd7c00; 
+}
+/*8. testimonial part */
+#testimonial{
+    padding-bottom: 100px;
+}
+#testimonial .section_header {
+    padding: 38px 0 30px 0;
+  }
+.testimonial_img img{
+    width: 100%;
+}
+.testimonial_item{
+    padding: 35px 0;
+}
+.testimonial_item p{
+    color: var(--main_color);
+}
+.company_address p{
+    font-weight: 700;
+    font-size: 16px;
+}
+.company_address a{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--main_color);
+}
+.testimonial_item .company_address p{
+    width: 70%;
+    margin-left: auto;
+    text-align: end;
+}
+/* slick style */
+.slick-dots{
+    position: absolute;
+	bottom: -10%;
+}
+.slick-dots li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.slick-dots li button{
+    font-size: 0;
+    height: 10px;
+    width: 10px;
+    background: #EEEEEE;
+    border-radius: 50%;
+    border: none;
+  }
+  .slick-dots .slick-active button{
+    background: #808081;
+    height: 13px;
+    width: 13px;
+  }
+
+
+
+/*9. downlode part*/
+#downlode{
+    background-color: #414042;  
+}
+.downlode_item h3{
+    font-size: 55px;
+    color: #ffff;
+    font-weight: 700;
+    padding-top: 35px;
+}
+.downlode_item .btn{
+    background-color: var(--main_color);
+    padding: 25px 30px;
+    margin: 28px;
+    font-weight: 700;
+    
+}
+.downlode_item .btn:hover{   
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(75,202,255,1);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(75,202,255,1);
+    box-shadow: 0px 3px 7px 0px rgba(75,202,255,1);
+}
+/*10. contact_part */
+#contact_part{
+    background: url(../img/map.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 104px 0;
+}
+#contact_part .card{
+    background-color: var(--main_color);
+    opacity: 0.9;
+}
+
+#contact_part .card h4{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+ input[type="text"],
+ input[type="email"],
+ textarea{
+    background:#fff;
+    text-align: center;
+   
+}
+#contact_part .btn{
+    border: none;
+    padding: 16px 76px;
+    color: var(--main_color);
+    background: #414042;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(49,48,50,1);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(49,48,50,1);
+    box-shadow: 0px 6px 7px 0px rgba(49,48,50,1);
+}
+/*11. footer part*/
+#footer{
+    background: #414042;
+    padding: 48px 0;
+}
+#footer p{
+    color: #808081;
+    font-size: 12;
+    font-weight: 400;
+}
+
+/*12. backtop */
+.backTop{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: var(--main_color);
+    border: 1px solid #131e29;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #ffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
